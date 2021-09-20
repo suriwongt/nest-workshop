@@ -1,0 +1,20 @@
+version: '3.1'
+services:
+ nest-api:
+   container_name: nest-api
+   build:
+     context: ./
+     dockerfile: DockerFile
+   image: nest-api
+   expose:
+     - 3000
+   volumes:
+     - ../dist:/app
+     - ../node_modules:/app/node_modules
+   logging:
+       driver: "json-file"
+       options:
+         max-file: '3'
+         max-size: '500m'
+   ports:
+     - '3000:3000'
