@@ -62,6 +62,7 @@ $ npm run test:cov
 $ npm run build
 $ docker-compose -f docker/run.yml up -d
 $ docker-compose -f docker/run.yml down
+$ docker rmi nest-api
 ```
 
 
