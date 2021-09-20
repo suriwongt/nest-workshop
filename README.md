@@ -59,6 +59,8 @@ $ npm run test:cov
 ```
 
 # Docker 
+
+```bash
 $ npm run build
 $ docker-compose -f docker/run.yml up -d
 $ docker-compose -f docker/run.yml down
